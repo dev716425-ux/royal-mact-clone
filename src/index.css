@@ -8,7 +8,7 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
+    --background: 230 30% 95%;
     --foreground: 222.2 84% 4.9%;
 
     --card: 0 0% 100%;
@@ -39,20 +39,22 @@ All colors MUST be HSL.
     --radius: 0.5rem;
 
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
+    
+    /* Royal System Colors */
+    --royal-teal: 173 75% 63%;
+    --royal-teal-dark: 173 60% 50%;
+    --royal-coral: 8 80% 70%;
+    --royal-gray: 0 0% 85%;
+    --royal-text-gray: 0 0% 60%;
+    --royal-green: 120 100% 35%;
+    --royal-dark-gray: 0 0% 45%;
   }
 
   .dark {
