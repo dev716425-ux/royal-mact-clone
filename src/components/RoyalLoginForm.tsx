@@ -4,7 +4,11 @@ import { Input } from '@/components/ui/input';
 import { Eye, EyeOff, Globe } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 
-const RoyalLoginForm = () => {
+interface RoyalLoginFormProps {
+  onLoginSuccess: () => void;
+}
+
+const RoyalLoginForm = ({ onLoginSuccess }: RoyalLoginFormProps) => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false);
@@ -19,7 +23,7 @@ const RoyalLoginForm = () => {
         title: "เข้าสู่ระบบสำเร็จ",
         description: "ยินดีต้อนรับสู่ระบบจัดการ Royal",
       });
-      // Here you would typically handle successful login
+      onLoginSuccess();
     } else {
       toast({
         title: "เข้าสู่ระบบล้มเหลว",
