@@ -41,7 +41,7 @@ import {
 
 const AdminDashboard = () => {
   const [selectedTab, setSelectedTab] = useState('dashboard');
-  const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
+  const [sidebarCollapsed, setSidebarCollapsed] = useState(true); // ปิดเป็นค่าเริ่มต้น
   const [expandedMenus, setExpandedMenus] = useState({
     gameRecords: false,
     historicalRecords: false,
@@ -110,8 +110,8 @@ const AdminDashboard = () => {
       case 'dashboard':
         return (
           <div className="space-y-4">
-            {/* Dashboard Cards */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 lg:gap-6">
+                         {/* Dashboard Cards */}
+             <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-3 sm:gap-4 lg:gap-6">
               <Card className="bg-gradient-to-br from-blue-500 to-blue-600 text-white">
                 <CardHeader className="pb-2 p-3 sm:p-4">
                   <CardTitle className="text-sm sm:text-base lg:text-lg font-medium">ตัวแทนทั่วไป</CardTitle>
@@ -157,65 +157,65 @@ const AdminDashboard = () => {
               </Card>
             </div>
 
-            {/* General Agent Recharge Form */}
-            <Card className="shadow-sm border">
-              <CardHeader>
-                <CardTitle className="text-base font-medium text-gray-800">การกรอกเงินค่าธรรมเนียมตัวแทนทั่วไป</CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <div className="flex flex-col sm:flex-row gap-2">
-                  <Button size="sm" className="bg-cyan-500 hover:bg-cyan-600 text-white text-xs sm:text-sm">
-                    เติมเงิน
-                  </Button>
-                  <Button variant="outline" size="sm" className="text-xs sm:text-sm">
-                    ตรวจสอบ
-                  </Button>
-                </div>
+                         {/* General Agent Recharge Form */}
+             <Card className="shadow-sm border">
+               <CardHeader>
+                 <CardTitle className="text-base sm:text-lg font-medium text-gray-800">การกรอกเงินค่าธรรมเนียมตัวแทนทั่วไป</CardTitle>
+               </CardHeader>
+               <CardContent className="space-y-4">
+                 <div className="flex flex-col sm:flex-row gap-2">
+                   <Button size="sm" className="bg-cyan-500 hover:bg-cyan-600 text-white text-xs sm:text-sm">
+                     เติมเงิน
+                   </Button>
+                   <Button variant="outline" size="sm" className="text-xs sm:text-sm">
+                     ตรวจสอบ
+                   </Button>
+                 </div>
 
-                <div className="space-y-3 sm:space-y-4">
-                  <div>
-                    <label className="block text-xs sm:text-sm font-medium text-gray-700 mb-1">
-                      บัญชีผู้ตัวแทนทั่วไป/ยอดคงเหลือปัจจุบัน
-                    </label>
-                    <Select>
-                      <SelectTrigger className="w-full h-9 sm:h-10">
-                        <SelectValue placeholder="i5a16 / 0.0000" />
-                      </SelectTrigger>
-                      <SelectContent>
-                        <SelectItem value="i5a16">i5a16 / 0.0000</SelectItem>
-                      </SelectContent>
-                    </Select>
-                  </div>
+                                 <div className="space-y-3 sm:space-y-4">
+                   <div>
+                     <label className="block text-xs sm:text-sm font-medium text-gray-700 mb-1">
+                       บัญชีผู้ตัวแทนทั่วไป/ยอดคงเหลือปัจจุบัน
+                     </label>
+                     <Select>
+                       <SelectTrigger className="w-full h-9 sm:h-10 text-xs sm:text-sm">
+                         <SelectValue placeholder="i5a16 / 0.0000" />
+                       </SelectTrigger>
+                       <SelectContent>
+                         <SelectItem value="i5a16">i5a16 / 0.0000</SelectItem>
+                       </SelectContent>
+                     </Select>
+                   </div>
 
-                  <div>
-                    <label className="block text-xs sm:text-sm font-medium text-gray-700 mb-1">
-                      จำนวน
-                    </label>
-                    <Input 
-                      type="number" 
-                      placeholder="0"
-                      className="w-full h-9 sm:h-10 text-sm"
-                    />
-                  </div>
+                   <div>
+                     <label className="block text-xs sm:text-sm font-medium text-gray-700 mb-1">
+                       จำนวน
+                     </label>
+                     <Input 
+                       type="number" 
+                       placeholder="0"
+                       className="w-full h-9 sm:h-10 text-xs sm:text-sm"
+                     />
+                   </div>
 
-                  <div>
-                    <label className="block text-xs sm:text-sm font-medium text-gray-700 mb-1">
-                      รหัสผ่าน 💳
-                    </label>
-                    <Input 
-                      type="password" 
-                      placeholder="กรุณากรอกรหัสผ่านในการยืนยันรายการ"
-                      className="w-full h-9 sm:h-10 text-sm"
-                    />
-                  </div>
+                   <div>
+                     <label className="block text-xs sm:text-sm font-medium text-gray-700 mb-1">
+                       รหัสผ่าน 💳
+                     </label>
+                     <Input 
+                       type="password" 
+                       placeholder="กรุณากรอกรหัสผ่านในการยืนยันรายการ"
+                       className="w-full h-9 sm:h-10 text-xs sm:text-sm"
+                     />
+                   </div>
 
-                  <Button 
-                    className="w-full bg-gray-400 hover:bg-gray-500 text-white h-9 sm:h-10 text-sm"
-                    disabled
-                  >
-                    แน่นอน
-                  </Button>
-                </div>
+                   <Button 
+                     className="w-full bg-gray-400 hover:bg-gray-500 text-white h-9 sm:h-10 text-xs sm:text-sm"
+                     disabled
+                   >
+                     แน่นอน
+                   </Button>
+                 </div>
               </CardContent>
             </Card>
           </div>
@@ -294,11 +294,19 @@ const AdminDashboard = () => {
 
       <div className="flex pt-12 sm:pt-16">
         {/* Main Content */}
-        <div className={`flex-1 transition-all duration-300 ${sidebarCollapsed ? '' : 'lg:mr-80'}`}>
+        <div className={`flex-1 transition-all duration-300 ${sidebarCollapsed ? '' : 'mr-72 sm:mr-80 lg:mr-80'}`}>
           <div className="p-2 sm:p-4 lg:p-6">
             {renderContent()}
           </div>
         </div>
+
+        {/* Mobile Overlay */}
+        {!sidebarCollapsed && (
+          <div 
+            className="fixed inset-0 bg-black/50 z-30 lg:hidden"
+            onClick={() => setSidebarCollapsed(true)}
+          />
+        )}
 
         {/* Right Sidebar - Fixed Position with Scrollable Content */}
         <div className={`fixed right-0 top-12 sm:top-16 h-[calc(100vh-3rem)] sm:h-[calc(100vh-4rem)] w-72 sm:w-80 bg-cyan-500 text-white transform transition-transform duration-300 ${sidebarCollapsed ? 'translate-x-full' : 'translate-x-0'} z-40 shadow-xl`}>

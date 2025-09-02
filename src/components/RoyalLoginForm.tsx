@@ -49,7 +49,7 @@ const RoyalLoginForm = ({ onLoginSuccess }: RoyalLoginFormProps) => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 flex items-center justify-center p-2 sm:p-4">
-      <div className="w-full max-w-sm sm:max-w-md lg:max-w-lg">
+      <div className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg">
         {/* Header */}
         <div className="bg-gradient-to-r from-cyan-500 via-teal-500 to-cyan-600 rounded-t-lg p-3 sm:p-4 text-center shadow-lg">
           <div className="flex items-center justify-center gap-2 text-white font-bold">

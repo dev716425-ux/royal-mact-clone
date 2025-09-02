@@ -13,22 +13,22 @@ const ChangePassword = () => {
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
 
   return (
-    <div className="w-full">
+    <div className="w-full max-w-2xl mx-auto">
       <Card className="shadow-sm border">
         <CardHeader>
-          <CardTitle className="text-lg font-medium text-gray-800">เปลี่ยนรหัสผ่าน</CardTitle>
+          <CardTitle className="text-base sm:text-lg font-medium text-gray-800">เปลี่ยนรหัสผ่าน</CardTitle>
         </CardHeader>
-        <CardContent className="space-y-4">
+        <CardContent className="space-y-3 sm:space-y-4">
           {/* Old Password */}
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1">รหัสผ่านเดิม</label>
+            <label className="block text-xs sm:text-sm font-medium text-gray-700 mb-1">รหัสผ่านเดิม</label>
             <div className="relative">
               <Input
                 type={showOldPassword ? "text" : "password"}
                 placeholder="กรุณากรอกรหัสผ่านเดิมของคุณ"
                 value={oldPassword}
                 onChange={(e) => setOldPassword(e.target.value)}
-                className="h-10 text-sm border-gray-300 pr-10"
+                className="h-9 sm:h-10 text-xs sm:text-sm border-gray-300 pr-10"
               />
               <button
                 type="button"
@@ -42,14 +42,14 @@ const ChangePassword = () => {
 
           {/* New Password */}
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1">รหัสผ่านใหม่</label>
+            <label className="block text-xs sm:text-sm font-medium text-gray-700 mb-1">รหัสผ่านใหม่</label>
             <div className="relative">
               <Input
                 type={showNewPassword ? "text" : "password"}
                 placeholder="ความยาว 4 - 8 หลา"
                 value={newPassword}
                 onChange={(e) => setNewPassword(e.target.value)}
-                className="h-10 text-sm border-gray-300 pr-10"
+                className="h-9 sm:h-10 text-xs sm:text-sm border-gray-300 pr-10"
               />
               <button
                 type="button"
@@ -66,14 +66,14 @@ const ChangePassword = () => {
 
           {/* Confirm Password */}
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1">ยืนยันรหัสผ่าน</label>
+            <label className="block text-xs sm:text-sm font-medium text-gray-700 mb-1">ยืนยันรหัสผ่าน</label>
             <div className="relative">
               <Input
                 type={showConfirmPassword ? "text" : "password"}
                 placeholder="ยืนยันรหัสผ่าน"
                 value={confirmPassword}
                 onChange={(e) => setConfirmPassword(e.target.value)}
-                className="h-10 text-sm border-gray-300 pr-10"
+                className="h-9 sm:h-10 text-xs sm:text-sm border-gray-300 pr-10"
               />
               <button
                 type="button"
@@ -86,7 +86,7 @@ const ChangePassword = () => {
           </div>
 
           {/* Submit Button */}
-          <Button className="w-full bg-gray-400 hover:bg-gray-500 text-white h-10 text-sm">
+          <Button className="w-full bg-gray-400 hover:bg-gray-500 text-white h-9 sm:h-10 text-xs sm:text-sm">
             แน่นอน
           </Button>
         </CardContent>
