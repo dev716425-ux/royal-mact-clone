@@ -49,7 +49,7 @@ const RoyalLoginForm = ({ onLoginSuccess }: RoyalLoginFormProps) => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 flex items-center justify-center p-2 sm:p-4">
-      <div className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg">
+      <div className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl">
         {/* Header */}
         <div className="bg-gradient-to-r from-cyan-500 via-teal-500 to-cyan-600 rounded-t-lg p-3 sm:p-4 text-center shadow-lg">
           <div className="flex items-center justify-center gap-2 text-white font-bold">
@@ -74,7 +74,7 @@ const RoyalLoginForm = ({ onLoginSuccess }: RoyalLoginFormProps) => {
                 placeholder="Enter your username"
                 value={username}
                 onChange={(e) => setUsername(e.target.value)}
-                className="h-10 sm:h-12 text-sm sm:text-base border-gray-300 rounded-lg px-3 sm:px-4 focus:border-cyan-500 focus:ring-cyan-500"
+                className="h-11 sm:h-12 text-sm sm:text-base border-gray-300 rounded-lg px-3 sm:px-4 focus:border-cyan-500 focus:ring-cyan-500"
               />
             </div>
 
@@ -88,12 +88,12 @@ const RoyalLoginForm = ({ onLoginSuccess }: RoyalLoginFormProps) => {
                 placeholder="Enter your password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-                className="h-10 sm:h-12 text-sm sm:text-base border-gray-300 rounded-lg px-3 sm:px-4 pr-10 sm:pr-12 focus:border-cyan-500 focus:ring-cyan-500"
+                className="h-11 sm:h-12 text-sm sm:text-base border-gray-300 rounded-lg px-3 sm:px-4 pr-10 sm:pr-12 focus:border-cyan-500 focus:ring-cyan-500"
               />
               <button
                 type="button"
                 onClick={() => setShowPassword(!showPassword)}
-                className="absolute right-2 sm:right-3 top-8 sm:top-9 text-gray-400 hover:text-gray-600"
+                className="absolute right-2 sm:right-3 top-9 sm:top-9 text-gray-400 hover:text-gray-600"
               >
                 {showPassword ? <EyeOff className="h-4 w-4 sm:h-5 sm:w-5" /> : <Eye className="h-4 w-4 sm:h-5 sm:w-5" />}
               </button>
@@ -112,13 +112,13 @@ const RoyalLoginForm = ({ onLoginSuccess }: RoyalLoginFormProps) => {
           <div className="flex flex-col sm:flex-row gap-2 sm:gap-3 mt-4 sm:mt-6">
             <Button
               onClick={handleLineAdd}
-              className="flex-1 h-9 sm:h-10 bg-green-600 hover:bg-green-700 text-white font-medium rounded-lg text-xs sm:text-sm"
+              className="flex-1 h-10 sm:h-11 bg-green-600 hover:bg-green-700 text-white font-medium rounded-lg text-xs sm:text-sm"
             >
               📱 LINE ADD
             </Button>
             <Button
               onClick={handleDesktop}
-              className="flex-1 h-9 sm:h-10 bg-gray-600 hover:bg-gray-700 text-white font-medium rounded-lg text-xs sm:text-sm"
+              className="flex-1 h-10 sm:h-11 bg-gray-600 hover:bg-gray-700 text-white font-medium rounded-lg text-xs sm:text-sm"
             >
               🖥️ DESKTOP
             </Button>

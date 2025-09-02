@@ -110,52 +110,52 @@ const AdminDashboard = () => {
       case 'dashboard':
         return (
           <div className="space-y-4">
-                         {/* Dashboard Cards */}
-             <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-3 sm:gap-4 lg:gap-6">
-              <Card className="bg-gradient-to-br from-blue-500 to-blue-600 text-white">
-                <CardHeader className="pb-2 p-3 sm:p-4">
-                  <CardTitle className="text-sm sm:text-base lg:text-lg font-medium">ตัวแทนทั่วไป</CardTitle>
-                </CardHeader>
-                <CardContent className="p-3 sm:p-4 pt-0">
-                  <div className="flex items-center justify-end">
-                    <UserCheck className="h-6 w-6 sm:h-8 sm:w-8 opacity-80" />
-                  </div>
-                </CardContent>
-              </Card>
+                                      {/* Dashboard Cards */}
+             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 lg:gap-6">
+               <Card className="bg-gradient-to-br from-blue-500 to-blue-600 text-white">
+                 <CardHeader className="pb-2 p-3 sm:p-4">
+                   <CardTitle className="text-sm sm:text-base lg:text-lg font-medium">ตัวแทนทั่วไป</CardTitle>
+                 </CardHeader>
+                 <CardContent className="p-3 sm:p-4 pt-0">
+                   <div className="flex items-center justify-end">
+                     <UserCheck className="h-6 w-6 sm:h-8 sm:w-8 opacity-80" />
+                   </div>
+                 </CardContent>
+               </Card>
 
-              <Card className="bg-gradient-to-br from-cyan-500 to-teal-600 text-white">
-                <CardHeader className="pb-2 p-3 sm:p-4">
-                  <CardTitle className="text-sm sm:text-base lg:text-lg font-medium">สมาชิก</CardTitle>
-                </CardHeader>
-                <CardContent className="p-3 sm:p-4 pt-0">
-                  <div className="flex items-center justify-end">
-                    <Users className="h-6 w-6 sm:h-8 sm:w-8 opacity-80" />
-                  </div>
-                </CardContent>
-              </Card>
+               <Card className="bg-gradient-to-br from-cyan-500 to-teal-600 text-white">
+                 <CardHeader className="pb-2 p-3 sm:p-4">
+                   <CardTitle className="text-sm sm:text-base lg:text-lg font-medium">สมาชิก</CardTitle>
+                 </CardHeader>
+                 <CardContent className="p-3 sm:p-4 pt-0">
+                   <div className="flex items-center justify-end">
+                     <Users className="h-6 w-6 sm:h-8 sm:w-8 opacity-80" />
+                   </div>
+                 </CardContent>
+               </Card>
 
-              <Card className="bg-gradient-to-br from-cyan-500 to-teal-600 text-white">
-                <CardHeader className="pb-2 p-3 sm:p-4">
-                  <CardTitle className="text-sm sm:text-base lg:text-lg font-medium">รายงานการชนะ/แพ้</CardTitle>
-                </CardHeader>
-                <CardContent className="p-3 sm:p-4 pt-0">
-                  <div className="flex items-center justify-end">
-                    <BarChart3 className="h-6 w-6 sm:h-8 sm:w-8 opacity-80" />
-                  </div>
-                </CardContent>
-              </Card>
+               <Card className="bg-gradient-to-br from-cyan-500 to-teal-600 text-white">
+                 <CardHeader className="pb-2 p-3 sm:p-4">
+                   <CardTitle className="text-sm sm:text-base lg:text-lg font-medium">รายงานการชนะ/แพ้</CardTitle>
+                 </CardHeader>
+                 <CardContent className="p-3 sm:p-4 pt-0">
+                   <div className="flex items-center justify-end">
+                     <BarChart3 className="h-6 w-6 sm:h-8 sm:w-8 opacity-80" />
+                   </div>
+                 </CardContent>
+               </Card>
 
-              <Card className="bg-gradient-to-br from-blue-500 to-blue-600 text-white">
-                <CardHeader className="pb-2 p-3 sm:p-4">
-                  <CardTitle className="text-sm sm:text-base lg:text-lg font-medium">บันทึกการเดิมเงิน</CardTitle>
-                </CardHeader>
-                <CardContent className="p-3 sm:p-4 pt-0">
-                  <div className="flex items-center justify-end">
-                    <FileText className="h-6 w-6 sm:h-8 sm:w-8 opacity-80" />
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
+               <Card className="bg-gradient-to-br from-blue-500 to-blue-600 text-white">
+                 <CardHeader className="pb-2 p-3 sm:p-4">
+                   <CardTitle className="text-sm sm:text-base lg:text-lg font-medium">บันทึกการเดิมเงิน</CardTitle>
+                 </CardHeader>
+                 <CardContent className="p-3 sm:p-4 pt-0">
+                   <div className="flex items-center justify-end">
+                     <FileText className="h-6 w-6 sm:h-8 sm:w-8 opacity-80" />
+                   </div>
+                 </CardContent>
+               </Card>
+             </div>
 
                          {/* General Agent Recharge Form */}
              <Card className="shadow-sm border">
@@ -164,10 +164,10 @@ const AdminDashboard = () => {
                </CardHeader>
                <CardContent className="space-y-4">
                  <div className="flex flex-col sm:flex-row gap-2">
-                   <Button size="sm" className="bg-cyan-500 hover:bg-cyan-600 text-white text-xs sm:text-sm">
+                   <Button size="sm" className="bg-cyan-500 hover:bg-cyan-600 text-white text-xs sm:text-sm h-9 sm:h-10">
                      เติมเงิน
                    </Button>
-                   <Button variant="outline" size="sm" className="text-xs sm:text-sm">
+                   <Button variant="outline" size="sm" className="text-xs sm:text-sm h-9 sm:h-10">
                      ตรวจสอบ
                    </Button>
                  </div>
@@ -294,7 +294,7 @@ const AdminDashboard = () => {
 
       <div className="flex pt-12 sm:pt-16">
         {/* Main Content */}
-        <div className={`flex-1 transition-all duration-300 ${sidebarCollapsed ? '' : 'mr-72 sm:mr-80 lg:mr-80'}`}>
+        <div className={`flex-1 transition-all duration-300 ${sidebarCollapsed ? '' : 'mr-0 lg:mr-80'}`}>
           <div className="p-2 sm:p-4 lg:p-6">
             {renderContent()}
           </div>
@@ -309,7 +309,7 @@ const AdminDashboard = () => {
         )}
 
         {/* Right Sidebar - Fixed Position with Scrollable Content */}
-        <div className={`fixed right-0 top-12 sm:top-16 h-[calc(100vh-3rem)] sm:h-[calc(100vh-4rem)] w-72 sm:w-80 bg-cyan-500 text-white transform transition-transform duration-300 ${sidebarCollapsed ? 'translate-x-full' : 'translate-x-0'} z-40 shadow-xl`}>
+        <div className={`fixed right-0 top-12 sm:top-16 h-[calc(100vh-3rem)] sm:h-[calc(100vh-4rem)] w-full sm:w-80 lg:w-80 bg-cyan-500 text-white transform transition-transform duration-300 ${sidebarCollapsed ? 'translate-x-full' : 'translate-x-0'} z-40 shadow-xl`}>
           <div className="h-full flex flex-col">
             {/* Menu Items - Scrollable */}
             <div className="flex-1 overflow-y-auto p-2 sm:p-4 space-y-1 sm:space-y-2 scrollbar-thin scrollbar-thumb-cyan-300 scrollbar-track-transparent">
@@ -330,6 +330,10 @@ const AdminDashboard = () => {
                           toggleMenu(item.id);
                         } else {
                           setSelectedTab(item.id);
+                          // ปิด sidebar บนมือถือหลังจากเลือกเมนู
+                          if (window.innerWidth < 1024) {
+                            setSidebarCollapsed(true);
+                          }
                         }
                       }}
                     >
@@ -353,7 +357,13 @@ const AdminDashboard = () => {
                             className={`w-full justify-start text-white hover:bg-white/20 py-1 sm:py-2 text-xs rounded-md ${
                               selectedTab === subItem.id ? 'bg-white/20 shadow-sm' : ''
                             }`}
-                            onClick={() => setSelectedTab(subItem.id)}
+                            onClick={() => {
+                              setSelectedTab(subItem.id);
+                              // ปิด sidebar บนมือถือหลังจากเลือกเมนู
+                              if (window.innerWidth < 1024) {
+                                setSidebarCollapsed(true);
+                              }
+                            }}
                           >
                             {subItem.label}
                           </Button>

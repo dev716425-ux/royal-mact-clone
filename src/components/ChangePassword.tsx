@@ -13,7 +13,7 @@ const ChangePassword = () => {
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
 
   return (
-    <div className="w-full max-w-2xl mx-auto">
+    <div className="w-full max-w-lg sm:max-w-xl lg:max-w-2xl mx-auto">
       <Card className="shadow-sm border">
         <CardHeader>
           <CardTitle className="text-base sm:text-lg font-medium text-gray-800">เปลี่ยนรหัสผ่าน</CardTitle>
